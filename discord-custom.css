@@ -1,0 +1,107 @@
+:root {
+    /* Wallpapers - set wallpaper-global if you want the same wallpaper on the settings and home panels,
+       or set home-wallpaper and settings-wallpaper individually if you want separate ones. */
+    --wallpaper-global: url('https://media.discordapp.net/attachments/527391749010620416/542473453869989889/huge.png');
+    --home-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
+    --settings-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
+
+    /* This colour affects the timestamp that appears next to messages. */
+    --time-color: purple;
+
+    /* This colour is what's shown on the left side of a server icon if the server has unread messages. */
+    --guild-unread-color: pink;
+
+    /* A channel will have this text colour in the navigation panel if the channel has unread messages. */
+    --channel-unread-color: white;
+
+    /* This colour affects the colour of the little nib next to an unread channel. */
+    --channel-unread-nib-color: var(--channel-unread-color);
+
+    /* This colour affects the colour of the hashtag next to an unread channel. */
+    --channel-unread-hashtag-color: var(--channel-unread-color);
+
+    /* This is the colour for channels that have no new messages and aren't currently selected. (the default). Best left at grey. */
+    --channel-normal-color: grey;
+
+    /* This colour affects the colour of the hashtag next to normal (no new messages, unselected) channels. */
+    --channel-normal-hashtag-color: var(--channel-normal-color);
+
+    /* This is the colour for the current selected channel. */
+    --selected-channel-color: pink;
+
+    /* This is the colour for the hashtag before the current selected channel. */
+    --selected-channel-hashtag-color: var(--selected-channel-color);
+
+    /* This colour affects the text that appears under 'Playing <>', 'Streaming <>', etc under a username in the user list. */
+    --user-activity-color: pink;
+}
+
+/* glass elements */
+.theme-dark div[class*="channels-"] { background-color: rgba(0, 0, 0, 0.2) }
+.theme-dark div[class*="container-"] { background-color: rgba(0, 0, 0, 0) }
+.theme-dark div[class*="layer-"] { background-color: rgba(0, 0, 0, 0.7) }
+.theme-dark div[class*="appMount-"] { background-color: rgba(0, 0, 0, 0.2) }
+.theme-dark div[class*="guildsWrapper-"] { background-color: rgba(0, 0, 0, 0.4) }
+.theme-dark div[class*="chat-"] { background-color: unset }
+.theme-dark div[class*="messagesWrapper-"] { background-color: unset }
+.theme-dark div[class*="content-"] { background-color: unset }
+.theme-dark div[class*="content-"] form { background-color: unset }
+.theme-dark div[class*="channelTextArea-"] { background-color: unset }
+.theme-dark div[class*="membersWrap-"] { background-color: unset }
+.theme-dark div[class*="scrollerWrap-"] { background-color: unset }
+.theme-dark div[class*="members-"] { background-color: unset }
+.theme-dark div[class*="typing-"] { background-color: unset }
+.theme-dark div[class*="video-"] { background-color: unset }
+.theme-dark div[class*="videoHeight-"] { background-color: unset }
+.theme-dark div[class*="headerBar-"] { 
+    background: unset;
+}
+
+/* usernames */
+.theme-dark span[class*="username-"] { font-weight: bold }
+.theme-dark time[class*="imestampCozy-"] { color: var(--time-color) }
+
+/* code blocks */
+.hljs { background: unset !important }
+pre { background-color: rgba(0, 0, 0, 0.2) !important }
+
+/* unread messages */
+div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--guild-unread-color) !important }
+.theme-dark div[class*="unread-1Dp"] { background-color: var(--channel-unread-nib-color) }
+.theme-dark div[class*="nameUnreadText-"] { color: var(--channel-unread-color) !important}
+.theme-dark div[class*="nameSelectedText-"] { color: var(--selected-channel-color) !important}
+.theme-dark div[class*="activity-"] { color: var(--user-activity-color) }
+
+/* name tags */
+.theme-dark div[class*="name-"] { color: var(--channel-normal-color) }
+.theme-dark svg[class*="colorSelectedText-"][class*="icon-"] { color: var(--selected-channel-hashtag-color) }
+.theme-dark svg[class*="colorUnreadText-"][class*="icon-"] { color: var(--channel-unread-hashtag-color) }
+.theme-dark svg[class*="colorDefaultText-"][class*="icon-"] { color: var(--channel-normal-hashtag-color) }
+//.theme-dark span[class*="nameWithActivity-"] { color: var(--name-color) }
+
+/* background image */
+.theme-dark div[class*="layers-"] { 
+    background-image: var(--home-wallpaper);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* settings page */
+.theme-dark div[class*="autocomplete-"] { background-color: rgba(0, 0, 0, 0.8) }
+.theme-dark div[class*="contentRegion-"] { background-color: rgba(0, 0, 0, 0.4) }
+.theme-dark div[class*="contentColumnDefault-"] { min-width: 95%; }
+.theme-dark div[class*="sidebarRegion-"] { background-color: unset; flex: unset; }
+.theme-dark div[class*="sidebarRegionScroller-"] { justify-content: unset }
+
+.theme-dark div[class*="standardSidebarView-"] { 
+    background-image: var(--settings-wallpaper);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* unsorted */
+.theme-dark div[class*="valueChecked-"] { background-color: var(--main-color) }
+.theme-dark div[class*="typing-"] { background-color: var(--time-color) }
+.theme-dark div[class*="base-"] { background-color: unset }
