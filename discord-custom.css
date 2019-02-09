@@ -6,7 +6,7 @@
     --settings-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
 
     /* This colour affects the timestamp that appears next to messages. */
-    --time-color: purple;
+    --time-color: pink;
 
     /* This colour is what's shown on the left side of a server icon if the server has unread messages. */
     --guild-unread-color: pink;
