@@ -100,8 +100,3 @@ div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--gu
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* unsorted */
-.theme-dark div[class*="valueChecked-"] { background-color: var(--main-color) }
-.theme-dark div[class*="typing-"] { background-color: var(--time-color) }
-.theme-dark div[class*="base-"] { background-color: unset }
