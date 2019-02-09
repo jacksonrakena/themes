@@ -59,7 +59,7 @@
 
 /* usernames */
 .theme-dark span[class*="username-"] { font-weight: bold }
-.theme-dark time[class*="imestampCozy-"] { color: var(--time-color) }
+.theme-dark time[class*="timestampCozy-"] { color: var(--time-color) }
 
 /* code blocks */
 .hljs { background: unset !important }
