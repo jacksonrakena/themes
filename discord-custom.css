@@ -45,7 +45,7 @@
     --channels-tint: 0.2;
 
     /* This affects the tint that the entire window (channels + main) has. */
-    --container-tint: 0.5;
+    --container-tint: 0.6;
 
     /* This affects the tint that the server list has compared to the rest of the application. */
     --guilds-wrapper-tint: 0.4;
@@ -109,7 +109,6 @@ div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--gu
 	height: var(--chatbot-avatar-height);
 	width: var(--chatbot-avatar-width);
 	border-radius: 10%;
-	position: relative;
 }
 
 /* Making settings elements transparent. */
