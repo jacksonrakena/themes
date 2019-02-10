@@ -40,14 +40,23 @@
 
     /* This affects the width of avatars in the chatbox. */
     --chatbot-avatar-width: var(--chatbot-avatar-height);
+
+    /* This affects the tint that the channels sidebar has compared to the message wrapper.*/
+    --channels-tint: 0.2;
+
+    /* This affects the tint that the entire window (channels + main) has. */
+    --container-tint: 0.5;
+
+    /* This affects the tint that the server list has compared to the rest of the application. */
+    --guilds-wrapper-tint: 0.4;
 }
 
-/* glass elements */
-.theme-dark div[class*="channels-"] { background-color: rgba(0, 0, 0, 0.2) }
+/* Making elements transparent for background, as well as applying tints. */
+.theme-dark div[class*="channels-"] { background-color: rgba(0, 0, 0, var(--channels-tint)) }
 .theme-dark div[class*="container-"] { background-color: rgba(0, 0, 0, 0) }
-.theme-dark div[class*="layer-"] { background-color: rgba(0, 0, 0, 0.7) }
+.theme-dark div[class*="layer-"] { background-color: rgba(0, 0, 0, var(--container-tint)) }
 .theme-dark div[class*="appMount-"] { background-color: rgba(0, 0, 0, 0.2) }
-.theme-dark div[class*="guildsWrapper-"] { background-color: rgba(0, 0, 0, 0.4) }
+.theme-dark div[class*="guildsWrapper-"] { background-color: rgba(0, 0, 0, var(--guilds-wrapper-tint)) }
 .theme-dark div[class*="chat-"] { background-color: unset }
 .theme-dark div[class*="messagesWrapper-"] { background-color: unset }
 .theme-dark div[class*="content-"] { background-color: unset }
@@ -63,29 +72,31 @@
     background: unset;
 }
 
-/* usernames */
+/* Usernames as they appear in the chat window, and timestamps. */
 .theme-dark span[class*="username-"] { font-weight: bold }
 .theme-dark time[class*="timestampCozy-"] { color: var(--time-color) }
 
-/* code blocks */
+/* Transparent code blocks. */
 .hljs { background: unset !important }
 pre { background-color: rgba(0, 0, 0, 0.2) !important }
 
-/* unread messages */
+/* Unread and selected channels. */
 div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--guild-unread-color) !important }
 .theme-dark div[class*="unread-1Dp"] { background-color: var(--channel-unread-nib-color) }
 .theme-dark div[class*="nameUnreadText-"] { color: var(--channel-unread-color) !important}
 .theme-dark div[class*="nameSelectedText-"] { color: var(--selected-channel-color) !important}
 .theme-dark div[class*="activity-"] { color: var(--user-activity-color) }
-
-/* name tags */
-.theme-dark div[class*="name-"] { color: var(--channel-normal-color) }
 .theme-dark svg[class*="colorSelectedText-"][class*="icon-"] { color: var(--selected-channel-hashtag-color) }
 .theme-dark svg[class*="colorUnreadText-"][class*="icon-"] { color: var(--channel-unread-hashtag-color) }
+
+/* Normal channels */
 .theme-dark svg[class*="colorDefaultText-"][class*="icon-"] { color: var(--channel-normal-hashtag-color) }
+.theme-dark div[class*="name-"] { color: var(--channel-normal-color) }
+
+/* Names with activity. */
 .theme-dark span[class*="nameWithActivity-"] { color: grey; }
 
-/* background image */
+/* Wallpaper application for the main panel. */
 .theme-dark div[class*="layers-"] { 
     background-image: var(--home-wallpaper);
     background-size: cover;
@@ -93,24 +104,22 @@ div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--gu
     background-position: center;
 }
 
-/* large avatars */
+/* Enlarging the avatar size, and making them square. */
 .theme-dark div[class*="image-"][class*="large-"] { 
 	height: var(--chatbot-avatar-height);
 	width: var(--chatbot-avatar-width);
 	border-radius: 10%;
 	position: relative;
 }
-.theme-dark div[class*="containerCozy-"] {
 
-}
-
-/* settings page */
+/* Making settings elements transparent. */
 .theme-dark div[class*="autocomplete-"] { background-color: rgba(0, 0, 0, 0.8) }
 .theme-dark div[class*="contentRegion-"] { background-color: rgba(0, 0, 0, 0.4) }
 .theme-dark div[class*="contentColumnDefault-"] { min-width: 95%; }
 .theme-dark div[class*="sidebarRegion-"] { background-color: unset; flex: unset; }
 .theme-dark div[class*="sidebarRegionScroller-"] { justify-content: unset }
 
+/* Settings wallpaper. */
 .theme-dark div[class*="standardSidebarView-"] { 
     background-image: var(--settings-wallpaper);
     background-size: cover;
