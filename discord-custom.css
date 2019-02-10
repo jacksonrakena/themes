@@ -34,6 +34,12 @@
 
     /* This colour affects the text that appears under 'Playing <>', 'Streaming <>', etc under a username in the user list. */
     --user-activity-color: pink;
+
+    /* This affects the height of avatars in the chatbox. */
+    --chatbot-avatar-height: 50px;
+
+    /* This affects the width of avatars in the chatbox. */
+    --chatbot-avatar-width: var(--chatbot-avatar-height);
 }
 
 /* glass elements */
@@ -77,7 +83,7 @@ div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--gu
 .theme-dark svg[class*="colorSelectedText-"][class*="icon-"] { color: var(--selected-channel-hashtag-color) }
 .theme-dark svg[class*="colorUnreadText-"][class*="icon-"] { color: var(--channel-unread-hashtag-color) }
 .theme-dark svg[class*="colorDefaultText-"][class*="icon-"] { color: var(--channel-normal-hashtag-color) }
-//.theme-dark span[class*="nameWithActivity-"] { color: var(--name-color) }
+.theme-dark span[class*="nameWithActivity-"] { color: grey; }
 
 /* background image */
 .theme-dark div[class*="layers-"] { 
@@ -85,6 +91,17 @@ div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--gu
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* large avatars */
+.theme-dark div[class*="image-"][class*="large-"] { 
+	height: var(--chatbot-avatar-height);
+	width: var(--chatbot-avatar-width);
+	border-radius: 10%;
+	position: relative;
+}
+.theme-dark div[class*="containerCozy-"] {
+
 }
 
 /* settings page */
