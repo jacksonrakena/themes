@@ -1,7 +1,7 @@
 :root {
     /* Wallpapers - set wallpaper-global if you want the same wallpaper on the settings and home panels,
        or set home-wallpaper and settings-wallpaper individually if you want separate ones. */
-    --wallpaper-global: url('https://media.discordapp.net/attachments/527391749010620416/545539350990159872/65346747_p0.jpg');
+    --wallpaper-global: url('https://media.discordapp.net/attachments/527391749010620416/542473453869989889/huge.png');
     --home-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
     --settings-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
 
