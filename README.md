@@ -6,5 +6,10 @@ Just a hobby project.
 Please note modifying your Discord client might get you banned, and that this theme is also only tested and made to work with the desktop Dark theme.
 
 
+### Executive Notes
+- Port to Powercord's style manager coming soon.
+- Works with BeautifulDiscord at the moment.
+
+
 ### Copyright
 Public domain.
