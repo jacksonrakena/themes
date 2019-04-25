@@ -1,3 +1,5 @@
+Theme last updated: March 12th, 2019.  
+Notes: Breaks with the latest Discord Canary theme redesign. I'm not going to fix it.
 # catitude.theme
 My personal Discord theme, that I don't actually use because I don't want to get banned for violating the Terms of Service.
 Just a hobby project.  
