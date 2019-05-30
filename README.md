@@ -1,17 +1,11 @@
-Theme last updated: March 12th, 2019.  
-Notes: Breaks with the latest Discord Canary theme redesign. I'm not going to fix it.
-# catitude.theme
-My personal Discord theme, that I don't actually use because I don't want to get banned for violating the Terms of Service.
-Just a hobby project.  
+# Colourize
+A list of themes for various applications that I use.   
+May or may not work.  
+
+### Directory Listing
+- `discord-custom.css` - Discord theme. Broken at the moment.
+- `seafoam-dark-vs2019.vstheme` - Visual Studio 2019 theme. Works with the Colour Theme Editor extension.
   
   
-Please note modifying your Discord client might get you banned, and that this theme is also only tested and made to work with the desktop Dark theme.
-
-
-### Executive Notes
-- Port to Powercord's style manager coming soon.
-- Works with BeautifulDiscord at the moment.
-
-
 ### Copyright
-Public domain.
+Copyright (c) 2018-2019 abyssal512. Licensed under the MIT License.  
