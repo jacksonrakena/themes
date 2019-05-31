@@ -4301,16 +4301,16 @@
         <Background Type="CT_RAW" Source="FF3F3F46" />
       </Color>
       <Color Name="ToolWindowButtonDown">
-        <Background Type="CT_RAW" Source="FF0E6198" />
+        <Background Type="CT_RAW" Source="FF44B080" />
       </Color>
       <Color Name="ToolWindowButtonDownBorder">
-        <Background Type="CT_RAW" Source="FF0E6198" />
+        <Background Type="CT_RAW" Source="FF8FFFD4" />
       </Color>
       <Color Name="ToolWindowButtonHoverActive">
-        <Background Type="CT_RAW" Source="FF52B0EF" />
+        <Background Type="CT_RAW" Source="FF44B080" />
       </Color>
       <Color Name="ToolWindowButtonHoverActiveBorder">
-        <Background Type="CT_RAW" Source="FF52B0EF" />
+        <Background Type="CT_RAW" Source="FF8FFFD4" />
       </Color>
       <Color Name="ToolWindowButtonHoverInactive">
         <Background Type="CT_RAW" Source="FF393939" />
@@ -4873,7 +4873,7 @@
         <Foreground Type="CT_RAW" Source="FFFFFFFF" />
       </Color>
       <Color Name="StatusBarNoSolution">
-        <Background Type="CT_RAW" Source="FF68217A" />
+        <Background Type="CT_RAW" Source="FF44B080" />
         <Foreground Type="CT_RAW" Source="FFFFFFFF" />
       </Color>
       <Color Name="MainWindowActiveBuildingBorder">
