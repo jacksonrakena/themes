@@ -1,0 +1,8 @@
+{
+    "name": "Seafoam",
+    "description": "A lovely light green theme.",
+    "version": "1.0.0",
+    "author": "Abyssal",
+    "license": "MIT License",
+    "theme": "./pc-seafoam.css"
+}
