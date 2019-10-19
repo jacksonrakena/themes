@@ -6,7 +6,7 @@ May or may not work.
 **Discord**  
 - `discord-custom.css` - Broken at the moment.
   
-**Visual Studio 2019** ([Colour Theme Editor for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2019ColorThemeEditor)]
+**Visual Studio 2019** ([Colour Theme Editor for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2019ColorThemeEditor))
 - `seafoam-dark-vs2019.vstheme` - Seafoam/turquoise accent, dark base.
 - `pink-vs2019.vstheme` - White base, pink accent colours.
 - `pink-transparent-vs2019.vstheme` - Pink theme but transparent, for image backgrounds.
