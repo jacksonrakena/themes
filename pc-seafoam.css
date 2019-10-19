@@ -1,0 +1,153 @@
+:root {
+    /* Wallpapers - set wallpaper-global if you want the same wallpaper on the settings and home panels,
+       or set home-wallpaper and settings-wallpaper individually if you want separate ones. */
+    --wallpaper-global: url('https://media.discordapp.net/attachments/598485650525913119/625572889365708800/70867408_p0_waifu2x_art_noise1_tta_1_3-2.png');
+    --home-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
+    --settings-wallpaper: var(--wallpaper-global); /* set this to url(<insert image url>) if you want separate */
+
+    /* Colours */
+    --theme-accent: rgb(161,243,198);
+
+    /* This colour affects the timestamp that appears next to messages. */
+    --time-color: white;
+
+    /* This is the colour for channels that have no new messages and aren't currently selected. (the default). Best left at grey. */
+    --channel-normal-color: #cfd9e9;
+
+    /* This is the colour for the nib for unread text channels. */
+    --unread-channel-nib-colour: white;
+
+    /* This is the colour for the hashtag of muted channels. */
+    --muted-channel-hashtag-colour: black;
+
+    /* This is the background colour of context menus. */
+    --context-menu-colour: #18191c;
+
+    /* This is the colour for the current selected channel. */
+    --selected-channel-color: white;
+
+    /* This is the colour for the hashtag before the current selected channel. */
+    --selected-channel-hashtag-color: var(--selected-channel-color);
+
+    /* This colour affects the text that appears under 'Playing <>', 'Streaming <>', etc under a username in the user list. */
+    --user-activity-color: white;
+
+    /* This affects the tint that the chatbox has. */
+    --chatbox-tint: 0.3;
+
+    /* This affects the tint that the channels sidebar has compared to the message wrapper.*/
+    --channels-tint: 0.35;
+
+    /* This affects the tint that the entire window (channels + main) has. */
+    --container-tint: 0.4;
+
+    /* This affects the tint that the server list has compared to the rest of the application. */
+    --guilds-wrapper-tint: 0.4;
+
+    /* This affects the colour of category channel names. It also affects role categories on the right sidebar. Default = #8e9297 */
+    --category-channels-text-colour: var(--theme-accent);
+
+    /* This affects the colour of text sent by users. Default = #dcddde */
+    --channel-message-text-colour: white;
+
+    /* This affects the colour of server names (header), and the current selected channel name. Default = white */
+    --header-name: white;
+
+    /* This affects the colour of interactive buttons (upload image, settings, deafen/mute self) */
+    --interactive: white;
+
+    /* This affects the colour of interactive buttons while the user is hovering over them. */
+    --interactive-hover-colour: var(--theme-accent);
+
+    /* This affects the colour of the channel # and speaker icons, as well as the 'Message #channel' text. */
+    --channel-icons-and-message-prompt: white;
+
+    /* The colour of links. */
+    --link-colour: #00b0f4;
+
+    /* The tint on the user panel in the bottom left. */
+    --user-panel-tint: 0.4;
+
+    /* This is the background colour of the selected channel. */
+    --selected-channel-background-colour: #b5f1dd8f;
+
+    /* This is the background colour of the hovered channel. */
+    --hovered-channel-background-colour: var(--selected-channel-background-colour);
+}
+
+.theme-dark {
+    --channels-default: var(--category-channels-text-colour);
+    --text-normal: var(--channel-message-text-colour);
+
+    --header-primary: var(--header-name);
+    --header-secondary: var(--theme-accent);
+    --interactive-normal: var(--interactive);
+    --interactive-hover: var(--interactive-hover-colour);
+    --interactive-active: var(--unread-channel-nib-colour);
+    --interactive-muted: var(--muted-channel-hashtag-colour);
+
+    --background-primary: rgba(0, 0, 0, var(--chatbox-tint));
+    --background-secondary: rgba(0, 0, 0, var(--channels-tint));
+    --background-tertiary: rgba(0, 0, 0, var(--guilds-wrapper-tint));
+    --background-accent: #4f545c;
+    --text-muted: var(--channel-icons-and-message-prompt);
+    --channeltextarea-background:rgba(0, 0, 0, var(--chatbox-tint));
+    --background-floating: var(--context-menu-colour);
+    --background-modifier-selected: var(--selected-channel-background-colour);
+    --background-modifier-hover: var(--hovered-channel-background-colour);
+    --background-modifier-active: var(--selected-channel-background-colour);
+    --text-link: var(--link-colour);
+}
+
+.pc-panels {
+    background-color: rgba(0, 0, 0, var(--user-panel-tint));
+}
+
+/* Making elements transparent for background, as well as applying tints. */
+.theme-dark div[class*="layer-"] { background-color: rgba(0, 0, 0, var(--container-tint)) }
+/* Usernames as they appear in the chat window, and timestamps. */
+.theme-dark span[class*="username-"] { font-weight: bold }
+.theme-dark time[class*="timestampCozy-"] { color: var(--time-color) }
+
+/* Transparent code blocks. */
+.hljs { background: unset !important }
+pre { background-color: rgba(0, 0, 0, 0.2) !important }
+
+/* Unread and selected channels. */
+div[class*="scrollerWrap"] [class*="unread"]:before { background-color: var(--guild-unread-color) !important }
+/*.theme-dark div[class*="unread-1Dp"] { background-color: var(--channel-unread-nib-color) }*/
+.theme-dark div[class*="nameUnreadText-"] { color: var(--channel-unread-color) !important}
+.theme-dark div[class*="nameSelectedText-"] { color: var(--selected-channel-color) !important}
+.theme-dark div[class*="activity-"] { color: var(--user-activity-color) }
+.theme-dark svg[class*="colorSelectedText-"][class*="icon-"] { color: var(--selected-channel-hashtag-color) }
+.theme-dark svg[class*="colorUnreadText-"][class*="icon-"] { color: var(--channel-unread-hashtag-color) }
+
+/* Normal channels */
+.theme-dark svg[class*="colorDefaultText-"][class*="icon-"] { color: var(--channel-normal-hashtag-color) }
+.theme-dark div[class*="name-"] { color: var(--channel-normal-color) }
+
+/* Names with activity. */
+.theme-dark span[class*="nameWithActivity-"] { color: grey; }
+
+/* Wallpaper application for the main panel. */
+.theme-dark div[class*="layers-"] { 
+    background-image: var(--home-wallpaper);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Making settings elements transparent. */
+.theme-dark div[class*="autocomplete-"] { background-color: rgba(0, 0, 0, 0.8) }
+.theme-dark div[class*="contentRegion-"] { background-color: rgba(0, 0, 0, 0.4) }
+.theme-dark div[class*="contentColumnDefault-"] { min-width: 95%; }
+.theme-dark div[class*="sidebarRegion-"] { background-color: unset; flex: unset; }
+.theme-dark div[class*="sidebarRegionScroller-"] { justify-content: unset }
+
+/* Settings wallpaper. */
+.theme-dark div[class*="standardSidebarView-"] { 
+    background-image: var(--settings-wallpaper);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

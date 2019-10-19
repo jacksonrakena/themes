@@ -5,6 +5,7 @@ May or may not work.
 ### Directory Listing
 **Discord**  
 - `discord-custom.css` - Broken at the moment.
+- `pc-seafoam.css` - Powercord Seafoam (greenish) theme.
   
 **Visual Studio 2019** ([Colour Theme Editor for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2019ColorThemeEditor))
 - `seafoam-dark-vs2019.vstheme` - Seafoam/turquoise accent, dark base.
